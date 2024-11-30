@@ -15,7 +15,7 @@ interface Props<C extends React.ElementType> {
 type HeadingProps<C extends React.ElementType> = Props<C> &
     Omit<React.ComponentPropsWithoutRef<C>, keyof Props<C>>
 
-const tiny = Tiny5({ weight: '400' })
+const tiny = Tiny5({ weight: '400', display: 'swap', subsets: ['latin'] });
 
 export const Heading = <C extends React.ElementType>({
     as,

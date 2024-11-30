@@ -3,4 +3,8 @@
 .header {
     width: 100%;
     background-color: colors.$dark-grey;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
