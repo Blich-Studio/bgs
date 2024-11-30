@@ -1,0 +1,10 @@
+.navbar_item {
+    background-color: red;
+        a,
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+            text-decoration: none;
+        }
+}
