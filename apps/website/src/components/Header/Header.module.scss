@@ -1,7 +1,6 @@
+@use '../../styles/colors';
+
 .header {
     width: 100%;
-    background-color: goldenrod;
-}
-.title {
-   font-size: large; 
+    background-color: colors.$dark-grey;
 }
