@@ -1,4 +1,8 @@
 {
   "name": "bgs-codebase",
-  "packageManager": "yarn@4.4.1"
+  "packageManager": "yarn@4.4.1",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ]
 }
