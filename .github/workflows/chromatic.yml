@@ -4,7 +4,7 @@ on: push
 
 jobs:
   chromatic:
-    name: Run Chromatic
+    name: Publish website to Chromatic
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -14,11 +14,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'yarn'
       - name: Install dependencies
         # ⚠️ See your package manager's documentation for the correct command to install dependencies in a CI environment.
-        run: npm ci
+        run: yarn
       - name: Run Chromatic
         uses: chromaui/action@latest
         with:
           # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          workingDir: apps/website
