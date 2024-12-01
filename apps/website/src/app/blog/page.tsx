@@ -1,7 +1,7 @@
-import { Heading } from "@bgs-website/components";
+import { Text } from "@bgs-website/components";
 
 export default function Page() {
     return (
-        <Heading as={'h2'}>Blog</Heading>
+        <Text as={'h2'}>Blog</Text>
     )
 }
