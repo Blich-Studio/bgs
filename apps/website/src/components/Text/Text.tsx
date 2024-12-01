@@ -39,8 +39,7 @@ export const Text = <C extends React.ElementType>({
     style = 'normal',
     font = 'robotoMono',
     padding = 'pd-0',
-    width = 'w60',
-   ...rest
+    width = 'w60'
 }: TextProps<C>) => {
     const Component = as || 'p'
 
