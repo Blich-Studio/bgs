@@ -1,0 +1,81 @@
+@use '../../styles/colors';
+
+// Text align
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+// Colors
+.green {
+    color: colors.$vivid-green;
+}
+
+// Text styles and variants
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+
+// Sizes
+.hero {
+    font-size: 72px;
+}
+
+.heading {
+    font-size: 36px;
+}
+
+.subheading {
+    font-size: 24px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.perex {
+    font-size: 18px;
+}
+
+.paragraph {
+    font-size: 14px;
+}
+
+.caption {
+    font-size: 12px;
+}
+
+
+// Typography styles
+
+.tiny5 {
+    font-family: 'Tiny5', serif;
+}
+
+.robotoMono {
+    font-family: 'Roboto Mono', monospace;
+}
