@@ -1,17 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Heading } from './Heading';
+import { Text } from './Text';
 
 const meta = {
-    title: 'Components/Heading',
-    component: Heading,
+    title: 'Components/Text',
+    component: Text,
     // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
     tags: ['autodocs'],
     parameters: {
       // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
       layout: 'fullscreen',
     },
-  } satisfies Meta<typeof Heading>;
+  } satisfies Meta<typeof Text>;
 
   export default meta;
   type Story = StoryObj<typeof meta>;
@@ -23,6 +23,9 @@ const meta = {
       // Default is 'h1'
       as: "h3",
 
-      color: "red"
+      color: "red",
+      align: "center",
+      size: "hero",
+      font: "robotoMono"
     },
   };
