@@ -1,4 +1,5 @@
 import "../styles/globals.scss";
+import '../styles/layout.scss';
 import { Footer, Header, Navbar } from "@bgs-website/components";
 import type { Metadata } from "next";
 
@@ -18,7 +19,7 @@ export default function RootLayout({
       <body>
         <Header />
         <Navbar />
-        {children}
+        <main className='layout'>{children}</main>
         <Footer />
       </body>
     </html>

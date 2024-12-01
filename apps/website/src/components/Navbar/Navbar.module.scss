@@ -1,4 +1,9 @@
+@use '../../styles/colors';
+
 .navbar {
+    background-color: colors.$dark-grey;
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    box-shadow: 1px 10px 17px -10px rgba(0,0,0,0.75);
 }

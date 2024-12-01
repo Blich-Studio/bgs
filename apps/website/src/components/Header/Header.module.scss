@@ -1,7 +1,10 @@
+@use '../../styles/colors';
+
 .header {
     width: 100%;
-    background-color: goldenrod;
-}
-.title {
-   font-size: large; 
+    background-color: colors.$dark-grey;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
