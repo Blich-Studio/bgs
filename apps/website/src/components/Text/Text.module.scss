@@ -13,6 +13,10 @@
     text-align: right;
 }
 
+.block {
+    text-align: justify;
+}
+
 // Colors
 .green {
     color: colors.$vivid-green;
@@ -78,4 +82,16 @@
 
 .robotoMono {
     font-family: 'Roboto Mono', monospace;
+}
+
+.pd-0 {
+    padding: 0;
+}
+
+.pd-12 {
+    padding: 12px;
+}
+
+.pd-24 {
+    padding: 24px;
 }

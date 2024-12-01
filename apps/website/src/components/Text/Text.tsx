@@ -7,10 +7,11 @@ interface Props<C extends React.ElementType> {
 
     children: React.ReactNode
     color?: string | 'black'
-    align?: 'left' | 'center' | 'right'
+    align?: 'left' | 'center' | 'right' | 'block'
     size?: 'caption' | 'paragraph' | 'perex' | 'title' | 'subheading' | 'heading' | 'hero'
     style?: 'bold' | 'italic' | 'underline' | 'strikethrough' | 'normal' | 'oblique'
     font? : 'tiny5' | 'robotoMono'
+    padding?: 'pd-0' | 'pd-12' | 'pd-24'
 
 }
 
@@ -35,14 +36,15 @@ export const Text = <C extends React.ElementType>({
     align = 'left',
     size = 'paragraph',
     style = 'normal',
-    font = 'robotoMono'
+    font = 'robotoMono',
+    padding = 'pd-0',
 }: TextProps<C>) => {
     const Component = as || 'p'
 
     const usedFont = font === 'tiny5'? tiny5.className : roboto_mono.className
 
     return (
-        <Component className={clsx(styles[color], styles[align], styles[size], styles[style], usedFont)}>
+        <Component className={clsx(styles[color], styles[align], styles[size], styles[style], usedFont, styles[padding])}>
             {children}
         </Component>
     )

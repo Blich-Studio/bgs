@@ -1,10 +1,17 @@
+@use '../../styles/colors';
+@use "sass:color";
+
 .navbar_item {
-    background-color: red;
+    width: 100%;
         a,
         &:link,
         &:visited,
-        &:hover,
         &:active {
             text-decoration: none;
         }
+        &:hover {
+            //background-color: darken($color: colors.$dark-grey, $amount: 3);
+            background-color: color.adjust(colors.$dark-grey, $lightness: -3%)
+        }
+        
 }
