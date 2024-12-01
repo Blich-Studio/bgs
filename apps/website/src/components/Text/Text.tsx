@@ -12,6 +12,7 @@ interface Props<C extends React.ElementType> {
     style?: 'bold' | 'italic' | 'underline' | 'strikethrough' | 'normal' | 'oblique'
     font? : 'tiny5' | 'robotoMono'
     padding?: 'pd-0' | 'pd-12' | 'pd-24'
+    width?: 'w40' | 'w50' | 'w60' | 'w70' | 'w80' | 'w90' | 'w100'
 
 }
 
@@ -38,13 +39,15 @@ export const Text = <C extends React.ElementType>({
     style = 'normal',
     font = 'robotoMono',
     padding = 'pd-0',
+    width = 'w60',
+   ...rest
 }: TextProps<C>) => {
     const Component = as || 'p'
 
     const usedFont = font === 'tiny5'? tiny5.className : roboto_mono.className
 
     return (
-        <Component className={clsx(styles[color], styles[align], styles[size], styles[style], usedFont, styles[padding])}>
+        <Component className={clsx(styles[color], styles[align], styles[size], styles[style], usedFont, styles[padding], styles[width], styles.wrapper)}>
             {children}
         </Component>
     )

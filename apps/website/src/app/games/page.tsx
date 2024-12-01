@@ -1,7 +1,11 @@
-import { Text } from "@bgs-website/components";
+import { Text, Showcase } from "@bgs-website/components";
 
 export default function Games() {
     return(
-        <Text as={'h2'}>Games</Text>
+        <>
+            <Text align="center" padding="pd-24" size="heading" as={"h2"}>Games</Text>
+            <Showcase />
+        </>
+        
     );
 }
