@@ -19,6 +19,6 @@ const meta = {
     args: {
         title: 'Example Title',
         description: 'Example Description',
-        imageUrl: 'https://placehold.co/200',
+        imageUrl: 'https://placehold.co/300x200',
     },
   };

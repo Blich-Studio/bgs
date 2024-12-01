@@ -6,15 +6,15 @@ import { Text } from "../Text/Text";
 export const ShowcaseItem = ({ 
     title, 
     description, 
-    imageUrl
-}: { title: string, description: string, imageUrl: string }) => {
+    imageUrl = "https://placehold.co/400x200"
+}: { title: string, description: string, imageUrl?: string }) => {
     return (
         <div className={styles.showcase_item}>
             <Image
                 className={styles.showcase_item_image}
                 src={imageUrl}
                 alt={title}
-                width={200}
+                width={300}
                 height={200}
                 priority
             />
